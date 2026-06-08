@@ -1,9 +1,8 @@
 # 📦 Entregáveis — Coleta e Análise de Métricas em Pipeline CI/CD
 
-> Pasta-índice para facilitar a correção. Aqui estão **todos os itens avaliados**,
-> com link direto. Os arquivos de código permanecem em seus locais originais no
-> repositório (links abaixo); relatório, base de dados e gráficos estão **copiados
-> aqui** para acesso imediato.
+> Pasta **autossuficiente** para facilitar a correção: contém uma cópia de **todos
+> os entregáveis** (relatório, base de dados, gráficos, YAML do pipeline e scripts).
+> Os mesmos arquivos também existem em seus locais originais no repositório.
 
 **Aluno:** ryanbotgar
 **Repositório:** <https://github.com/ryanbotgar/ci-cd-metrics-experiment>
@@ -13,24 +12,46 @@
 
 ## ✅ Checklist de entregáveis
 
-| # | Entregável | Onde encontrar |
-|---|------------|----------------|
-| 1 | **Link do repositório GitHub** | <https://github.com/ryanbotgar/ci-cd-metrics-experiment> |
-| 2 | **Arquivo YAML do GitHub Actions** | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) · [ver no GitHub](https://github.com/ryanbotgar/ci-cd-metrics-experiment/blob/main/.github/workflows/ci.yml) |
-| 3 | **Script de coleta de métricas** | [`scripts/collect_metrics.py`](../scripts/collect_metrics.py) |
-| 4 | **Base de dados gerada (CSV/JSON)** | [`entregáveis/data/`](./data) — `metrics.csv`, `runs.csv`, `steps.csv`, `metrics.json` |
-| 5 | **Gráficos produzidos** | [`entregáveis/charts/`](./charts) — 5 gráficos `.png` |
-| 6 | **Relatório técnico (Markdown)** | [`entregáveis/RELATORIO.md`](./RELATORIO.md) |
-| 7 | **Como reproduzir o experimento** | Seção 10 do relatório · [`README.md`](../README.md) |
+| # | Entregável | Cópia nesta pasta | Original no repositório |
+|---|------------|-------------------|--------------------------|
+| 1 | **Link do repositório GitHub** | — | <https://github.com/ryanbotgar/ci-cd-metrics-experiment> |
+| 2 | **Arquivo YAML do GitHub Actions** | [`workflow/ci.yml`](./workflow/ci.yml) | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) |
+| 3 | **Script de coleta de métricas** | [`scripts/collect_metrics.py`](./scripts/collect_metrics.py) | [`../scripts/collect_metrics.py`](../scripts/collect_metrics.py) |
+| 4 | **Base de dados gerada (CSV/JSON)** | [`data/`](./data) — `metrics.csv`, `runs.csv`, `steps.csv`, `metrics.json` | [`../data/`](../data) |
+| 5 | **Gráficos produzidos** | [`charts/`](./charts) — 5 gráficos `.png` | [`../charts/`](../charts) |
+| 6 | **Relatório técnico (Markdown)** | [`RELATORIO.md`](./RELATORIO.md) | [`../report/RELATORIO.md`](../report/RELATORIO.md) |
+| 7 | **Como reproduzir o experimento** | seção "Como reproduzir" abaixo | [`../README.md`](../README.md) + seção 10 do relatório |
 
-### Scripts complementares (também avaliáveis)
+### Scripts (cópia nesta pasta em [`scripts/`](./scripts))
 
 | Script | Função |
 |--------|--------|
-| [`scripts/run_experiment.py`](../scripts/run_experiment.py) | aplica as 14 variações controladas e dispara as execuções (commit+push) |
-| [`scripts/gen_tests.py`](../scripts/gen_tests.py) | gera os testes de cada variação a partir das flags |
-| [`scripts/visualize.py`](../scripts/visualize.py) | gera os gráficos a partir da base coletada |
-| [`scripts/collect_metrics.py`](../scripts/collect_metrics.py) | consulta a API do GitHub e produz a base de dados |
+| [`scripts/collect_metrics.py`](./scripts/collect_metrics.py) | consulta a API do GitHub e produz a base de dados |
+| [`scripts/visualize.py`](./scripts/visualize.py) | gera os gráficos a partir da base coletada |
+| [`scripts/run_experiment.py`](./scripts/run_experiment.py) | aplica as 14 variações controladas e dispara as execuções (commit+push) |
+| [`scripts/gen_tests.py`](./scripts/gen_tests.py) | gera os testes de cada variação a partir das flags |
+
+---
+
+## ▶️ Como reproduzir (resumo)
+
+```bash
+git clone https://github.com/ryanbotgar/ci-cd-metrics-experiment
+cd ci-cd-metrics-experiment
+
+# disparar as 14 variações (commit+push de cada -> dispara o CI)
+python scripts/run_experiment.py --sleep 18
+
+# coletar métricas reais via API do GitHub
+pip install -r requirements-analysis.txt
+python scripts/collect_metrics.py --repo <OWNER>/<REPO> --workflow ci.yml --limit 30
+
+# gerar os gráficos
+python scripts/visualize.py
+```
+
+Pré-requisitos: Python 3.10+, `git` e [`gh`](https://cli.github.com/) autenticado.
+Detalhes completos na seção 10 do [relatório](./RELATORIO.md).
 
 ---
 
