@@ -7,6 +7,12 @@
 **Execuções analisadas:** 15 runs reais (run_number 1 a 15)
 **Data do experimento:** 2026-06-08 (UTC)
 
+> **Nota sobre a contagem de execuções:** o experimento controlado corresponde às
+> **runs 1–15**. Execuções com `run_number ≥ 16` que eventualmente apareçam na aba
+> *Actions* são apenas commits de manutenção (reset do repositório para o estado
+> baseline e adição da pasta `entregáveis/`), que reacionam o CI mas **não** fazem
+> parte das variações analisadas.
+
 ---
 
 ## 1. Objetivo e desenho do experimento
