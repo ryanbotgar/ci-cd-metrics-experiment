@@ -1,0 +1,2 @@
+run_id,run_number,commit_sha,commit_message,status,event,workflow_duration,test_count,test_failures,test_passed,test_mean_duration,attempt,run_started_at,updated_at,html_url
+27115487508,1,a0dae0cadc052d0be3d28d6208ff2bb0b0642b95,"chore: projeto-alvo, pipeline CI/CD e scripts de coleta/visualização",success,push,20.0,14,0,14,0.0001,1,2026-06-08T04:10:52Z,2026-06-08T04:11:12Z,https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115487508

@@ -30,7 +30,7 @@ import json
 import subprocess
 import sys
 import zipfile
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean
 
@@ -218,7 +218,8 @@ def collect(repo: str, workflow: str | None, limit: int) -> dict:
             }
         )
 
-    return {"repo": repo, "collected_at": datetime.utcnow().isoformat() + "Z", "runs": result_runs}
+    collected_at = datetime.now(timezone.utc).isoformat()
+    return {"repo": repo, "collected_at": collected_at, "runs": result_runs}
 
 
 def write_outputs(payload: dict) -> None:
