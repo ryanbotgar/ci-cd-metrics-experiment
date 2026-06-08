@@ -1,7 +1,2749 @@
 {
   "repo": "ryanbotgar/ci-cd-metrics-experiment",
-  "collected_at": "2026-06-08T04:11:33.997736Z",
+  "collected_at": "2026-06-08T04:17:19.238548+00:00",
   "runs": [
+    {
+      "run_id": 27115660590,
+      "run_number": 15,
+      "commit_sha": "24737ab92c3ecf96e197fa797b4d73acd85c9af9",
+      "commit_message": "exp(combo-slow-many-nocache): cache=false extra=200 fail=false slow=true/10s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 30.0,
+      "created_at": "2026-06-08T04:16:13Z",
+      "run_started_at": "2026-06-08T04:16:13Z",
+      "updated_at": "2026-06-08T04:16:43Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115660590",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 22.0,
+          "started_at": "2026-06-08T04:16:15Z",
+          "completed_at": "2026-06-08T04:16:37Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 11.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 11.0,
+          "started_at": "2026-06-08T04:16:15Z",
+          "completed_at": "2026-06-08T04:16:26Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 4.0,
+          "started_at": "2026-06-08T04:16:39Z",
+          "completed_at": "2026-06-08T04:16:43Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 214,
+      "test_failures": 0,
+      "test_passed": 214,
+      "test_mean_duration": 0.0468,
+      "tests_total_duration": 10.0256
+    },
+    {
+      "run_id": 27115651151,
+      "run_number": 14,
+      "commit_sha": "5d0e2b82b11ea32d564482f0cf3c900b0e8e9fa0",
+      "commit_message": "exp(sequential-2): cache=true extra=50 fail=false slow=false/0s parallel=False",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 45.0,
+      "created_at": "2026-06-08T04:15:54Z",
+      "run_started_at": "2026-06-08T04:15:54Z",
+      "updated_at": "2026-06-08T04:16:39Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115651151",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 15.0,
+          "started_at": "2026-06-08T04:15:58Z",
+          "completed_at": "2026-06-08T04:16:13Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 17.0,
+          "started_at": "2026-06-08T04:16:15Z",
+          "completed_at": "2026-06-08T04:16:32Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 5.0,
+          "started_at": "2026-06-08T04:16:33Z",
+          "completed_at": "2026-06-08T04:16:38Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 1.0
+            }
+          ]
+        }
+      ],
+      "test_count": 63,
+      "test_failures": 0,
+      "test_passed": 63,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0074
+    },
+    {
+      "run_id": 27115641242,
+      "run_number": 13,
+      "commit_sha": "95bccabfa5c03352a13106f1676efc4954edfbbc",
+      "commit_message": "exp(sequential-1): cache=true extra=0 fail=false slow=false/0s parallel=False",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 37.0,
+      "created_at": "2026-06-08T04:15:35Z",
+      "run_started_at": "2026-06-08T04:15:35Z",
+      "updated_at": "2026-06-08T04:16:12Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115641242",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:15:37Z",
+          "completed_at": "2026-06-08T04:15:47Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 4.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 11.0,
+          "started_at": "2026-06-08T04:15:49Z",
+          "completed_at": "2026-06-08T04:16:00Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 8.0,
+          "started_at": "2026-06-08T04:16:03Z",
+          "completed_at": "2026-06-08T04:16:11Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 3.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 14,
+      "test_failures": 0,
+      "test_passed": 14,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0015
+    },
+    {
+      "run_id": 27115631119,
+      "run_number": 12,
+      "commit_sha": "9df5968427c7ef381f49e687d76cd1e4137b0789",
+      "commit_message": "exp(no-cache-2): cache=false extra=50 fail=false slow=false/0s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 21.0,
+      "created_at": "2026-06-08T04:15:16Z",
+      "run_started_at": "2026-06-08T04:15:16Z",
+      "updated_at": "2026-06-08T04:15:37Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115631119",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 12.0,
+          "started_at": "2026-06-08T04:15:18Z",
+          "completed_at": "2026-06-08T04:15:30Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 7.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 12.0,
+          "started_at": "2026-06-08T04:15:18Z",
+          "completed_at": "2026-06-08T04:15:30Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 5.0,
+          "started_at": "2026-06-08T04:15:32Z",
+          "completed_at": "2026-06-08T04:15:37Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 63,
+      "test_failures": 0,
+      "test_passed": 63,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0073
+    },
+    {
+      "run_id": 27115618689,
+      "run_number": 11,
+      "commit_sha": "3e04241193a4e6ad5c310b88b8aa31025989e8c3",
+      "commit_message": "exp(no-cache-1): cache=false extra=0 fail=false slow=false/0s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 23.0,
+      "created_at": "2026-06-08T04:14:56Z",
+      "run_started_at": "2026-06-08T04:14:56Z",
+      "updated_at": "2026-06-08T04:15:19Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115618689",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:14:58Z",
+          "completed_at": "2026-06-08T04:15:08Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 12.0,
+          "started_at": "2026-06-08T04:14:58Z",
+          "completed_at": "2026-06-08T04:15:10Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 7.0,
+          "started_at": "2026-06-08T04:15:12Z",
+          "completed_at": "2026-06-08T04:15:19Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 14,
+      "test_failures": 0,
+      "test_passed": 14,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0015
+    },
+    {
+      "run_id": 27115608784,
+      "run_number": 10,
+      "commit_sha": "40aa598e9cf7a4508594821d9922cd3fca57abfd",
+      "commit_message": "exp(slow-test-15s): cache=true extra=0 fail=false slow=true/15s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 39.0,
+      "created_at": "2026-06-08T04:14:37Z",
+      "run_started_at": "2026-06-08T04:14:37Z",
+      "updated_at": "2026-06-08T04:15:16Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115608784",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 15.0,
+          "started_at": "2026-06-08T04:14:40Z",
+          "completed_at": "2026-06-08T04:14:55Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 28.0,
+          "started_at": "2026-06-08T04:14:39Z",
+          "completed_at": "2026-06-08T04:15:07Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 16.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 6.0,
+          "started_at": "2026-06-08T04:15:09Z",
+          "completed_at": "2026-06-08T04:15:15Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 14,
+      "test_failures": 0,
+      "test_passed": 14,
+      "test_mean_duration": 1.0716,
+      "tests_total_duration": 15.0021
+    },
+    {
+      "run_id": 27115598414,
+      "run_number": 9,
+      "commit_sha": "33714917f825c947bf98c873a5002985fd7f7ec9",
+      "commit_message": "exp(slow-test-5s): cache=true extra=0 fail=false slow=true/5s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 32.0,
+      "created_at": "2026-06-08T04:14:17Z",
+      "run_started_at": "2026-06-08T04:14:17Z",
+      "updated_at": "2026-06-08T04:14:49Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115598414",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 21.0,
+          "started_at": "2026-06-08T04:14:20Z",
+          "completed_at": "2026-06-08T04:14:41Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 7.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 12.0,
+          "started_at": "2026-06-08T04:14:19Z",
+          "completed_at": "2026-06-08T04:14:31Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 1.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 5.0,
+          "started_at": "2026-06-08T04:14:43Z",
+          "completed_at": "2026-06-08T04:14:48Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 14,
+      "test_failures": 0,
+      "test_passed": 14,
+      "test_mean_duration": 0.3573,
+      "tests_total_duration": 5.0015
+    },
+    {
+      "run_id": 27115588790,
+      "run_number": 8,
+      "commit_sha": "52b336a3c710424b1bb24cde933c951c1203c23f",
+      "commit_message": "exp(more-tests-500): cache=true extra=500 fail=false slow=false/0s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 28.0,
+      "created_at": "2026-06-08T04:13:59Z",
+      "run_started_at": "2026-06-08T04:13:59Z",
+      "updated_at": "2026-06-08T04:14:27Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115588790",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 13.0,
+          "started_at": "2026-06-08T04:14:01Z",
+          "completed_at": "2026-06-08T04:14:14Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:14:01Z",
+          "completed_at": "2026-06-08T04:14:11Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 3.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:14:16Z",
+          "completed_at": "2026-06-08T04:14:26Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 513,
+      "test_failures": 0,
+      "test_passed": 513,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0501
+    },
+    {
+      "run_id": 27115578063,
+      "run_number": 7,
+      "commit_sha": "708d02bb70b386fcd9a19aa61154ea6dfbf1aa15",
+      "commit_message": "exp(more-tests-200): cache=true extra=200 fail=false slow=false/0s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 25.0,
+      "created_at": "2026-06-08T04:13:39Z",
+      "run_started_at": "2026-06-08T04:13:39Z",
+      "updated_at": "2026-06-08T04:14:04Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115578063",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 16.0,
+          "started_at": "2026-06-08T04:13:41Z",
+          "completed_at": "2026-06-08T04:13:57Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 3.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:13:41Z",
+          "completed_at": "2026-06-08T04:13:51Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 3.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 4.0,
+          "started_at": "2026-06-08T04:13:59Z",
+          "completed_at": "2026-06-08T04:14:03Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 213,
+      "test_failures": 0,
+      "test_passed": 213,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0215
+    },
+    {
+      "run_id": 27115567979,
+      "run_number": 6,
+      "commit_sha": "f97f206dce585bd5f09196609c02fcd9782415e4",
+      "commit_message": "exp(more-tests-50): cache=true extra=50 fail=false slow=false/0s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 25.0,
+      "created_at": "2026-06-08T04:13:20Z",
+      "run_started_at": "2026-06-08T04:13:20Z",
+      "updated_at": "2026-06-08T04:13:45Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115567979",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 12.0,
+          "started_at": "2026-06-08T04:13:22Z",
+          "completed_at": "2026-06-08T04:13:34Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 11.0,
+          "started_at": "2026-06-08T04:13:22Z",
+          "completed_at": "2026-06-08T04:13:33Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 6.0,
+          "started_at": "2026-06-08T04:13:38Z",
+          "completed_at": "2026-06-08T04:13:44Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 63,
+      "test_failures": 0,
+      "test_passed": 63,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0062
+    },
+    {
+      "run_id": 27115557184,
+      "run_number": 5,
+      "commit_sha": "6a1e0ee9c5dd3bec61f8fe38c145d2e6864f6aa8",
+      "commit_message": "exp(failing-2): cache=true extra=10 fail=true slow=false/0s parallel=True",
+      "status": "failure",
+      "event": "push",
+      "workflow_duration": 23.0,
+      "created_at": "2026-06-08T04:13:00Z",
+      "run_started_at": "2026-06-08T04:13:00Z",
+      "updated_at": "2026-06-08T04:13:23Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115557184",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 9.0,
+          "started_at": "2026-06-08T04:13:02Z",
+          "completed_at": "2026-06-08T04:13:11Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 4.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "failure",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:13:02Z",
+          "completed_at": "2026-06-08T04:13:12Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 3.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "failure",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 8.0,
+          "started_at": "2026-06-08T04:13:14Z",
+          "completed_at": "2026-06-08T04:13:22Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 24,
+      "test_failures": 1,
+      "test_passed": 23,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0029
+    },
+    {
+      "run_id": 27115546164,
+      "run_number": 4,
+      "commit_sha": "70b7731541f7354b7cdcb84d8949391f4ed39396",
+      "commit_message": "exp(failing-1): cache=true extra=0 fail=true slow=false/0s parallel=True",
+      "status": "failure",
+      "event": "push",
+      "workflow_duration": 22.0,
+      "created_at": "2026-06-08T04:12:41Z",
+      "run_started_at": "2026-06-08T04:12:41Z",
+      "updated_at": "2026-06-08T04:13:03Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115546164",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 12.0,
+          "started_at": "2026-06-08T04:12:44Z",
+          "completed_at": "2026-06-08T04:12:56Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "failure",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:12:44Z",
+          "completed_at": "2026-06-08T04:12:54Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 4.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "failure",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "skipped",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 4.0,
+          "started_at": "2026-06-08T04:12:58Z",
+          "completed_at": "2026-06-08T04:13:02Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 14,
+      "test_failures": 1,
+      "test_passed": 13,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0017
+    },
+    {
+      "run_id": 27115535197,
+      "run_number": 3,
+      "commit_sha": "f366a4bf81a9623527f351c52fb52f71898a130c",
+      "commit_message": "exp(baseline-2): cache=true extra=0 fail=false slow=false/0s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 32.0,
+      "created_at": "2026-06-08T04:12:22Z",
+      "run_started_at": "2026-06-08T04:12:22Z",
+      "updated_at": "2026-06-08T04:12:54Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115535197",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 17.0,
+          "started_at": "2026-06-08T04:12:24Z",
+          "completed_at": "2026-06-08T04:12:41Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 6.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 10.0,
+          "started_at": "2026-06-08T04:12:24Z",
+          "completed_at": "2026-06-08T04:12:34Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 3.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 9.0,
+          "started_at": "2026-06-08T04:12:44Z",
+          "completed_at": "2026-06-08T04:12:53Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 3.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 14,
+      "test_failures": 0,
+      "test_passed": 14,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0018
+    },
+    {
+      "run_id": 27115524607,
+      "run_number": 2,
+      "commit_sha": "63f3a1cf7baec643ffaf91e96fc6785250e5792c",
+      "commit_message": "exp(baseline-1): cache=true extra=0 fail=false slow=false/0s parallel=True",
+      "status": "success",
+      "event": "push",
+      "workflow_duration": 24.0,
+      "created_at": "2026-06-08T04:12:03Z",
+      "run_started_at": "2026-06-08T04:12:03Z",
+      "updated_at": "2026-06-08T04:12:27Z",
+      "html_url": "https://github.com/ryanbotgar/ci-cd-metrics-experiment/actions/runs/27115524607",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_name": "Lint (ruff)",
+          "status": "success",
+          "job_duration": 15.0,
+          "started_at": "2026-06-08T04:12:05Z",
+          "completed_at": "2026-06-08T04:12:20Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 2.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run ruff (static analysis)",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Upload lint artifact",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Test (pytest)",
+          "status": "success",
+          "job_duration": 11.0,
+          "started_at": "2026-06-08T04:12:05Z",
+          "completed_at": "2026-06-08T04:12:16Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Read experiment flags",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Restore pip cache",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Install dependencies",
+              "status": "success",
+              "duration": 5.0
+            },
+            {
+              "name": "Run tests (pytest)",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload test results artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Restore pip cache",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        },
+        {
+          "job_name": "Collect pipeline metrics",
+          "status": "success",
+          "job_duration": 4.0,
+          "started_at": "2026-06-08T04:12:22Z",
+          "completed_at": "2026-06-08T04:12:26Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Collect this run's job timings via GitHub API",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Upload run metrics artifact",
+              "status": "success",
+              "duration": 0.0
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "success",
+              "duration": 1.0
+            },
+            {
+              "name": "Complete job",
+              "status": "success",
+              "duration": 0.0
+            }
+          ]
+        }
+      ],
+      "test_count": 14,
+      "test_failures": 0,
+      "test_passed": 14,
+      "test_mean_duration": 0.0001,
+      "tests_total_duration": 0.0016
+    },
     {
       "run_id": 27115487508,
       "run_number": 1,

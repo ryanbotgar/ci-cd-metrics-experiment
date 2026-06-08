@@ -1,4 +1,418 @@
 run_id,job_name,step_name,status,step_duration
+27115660590,Test (pytest),Set up job,success,1.0
+27115660590,Test (pytest),Run actions/checkout@v4,success,1.0
+27115660590,Test (pytest),Read experiment flags,success,0.0
+27115660590,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115660590,Test (pytest),Restore pip cache,skipped,0.0
+27115660590,Test (pytest),Install dependencies,success,6.0
+27115660590,Test (pytest),Run tests (pytest),success,11.0
+27115660590,Test (pytest),Upload test results artifact,success,0.0
+27115660590,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115660590,Test (pytest),Post Run actions/checkout@v4,success,1.0
+27115660590,Test (pytest),Complete job,success,0.0
+27115660590,Lint (ruff),Set up job,success,1.0
+27115660590,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115660590,Lint (ruff),Read experiment flags,success,0.0
+27115660590,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115660590,Lint (ruff),Restore pip cache,skipped,0.0
+27115660590,Lint (ruff),Install dependencies,success,5.0
+27115660590,Lint (ruff),Run ruff (static analysis),success,0.0
+27115660590,Lint (ruff),Upload lint artifact,success,0.0
+27115660590,Lint (ruff),Post Run actions/setup-python@v5,success,1.0
+27115660590,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115660590,Lint (ruff),Complete job,success,0.0
+27115660590,Collect pipeline metrics,Set up job,success,1.0
+27115660590,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115660590,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,1.0
+27115660590,Collect pipeline metrics,Upload run metrics artifact,success,0.0
+27115660590,Collect pipeline metrics,Post Run actions/checkout@v4,success,1.0
+27115660590,Collect pipeline metrics,Complete job,success,0.0
+27115651151,Lint (ruff),Set up job,success,1.0
+27115651151,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115651151,Lint (ruff),Read experiment flags,success,0.0
+27115651151,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115651151,Lint (ruff),Restore pip cache,success,2.0
+27115651151,Lint (ruff),Install dependencies,success,5.0
+27115651151,Lint (ruff),Run ruff (static analysis),success,0.0
+27115651151,Lint (ruff),Upload lint artifact,success,2.0
+27115651151,Lint (ruff),Post Restore pip cache,success,0.0
+27115651151,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115651151,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115651151,Lint (ruff),Complete job,success,0.0
+27115651151,Test (pytest),Set up job,success,1.0
+27115651151,Test (pytest),Run actions/checkout@v4,success,1.0
+27115651151,Test (pytest),Read experiment flags,success,0.0
+27115651151,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115651151,Test (pytest),Restore pip cache,success,2.0
+27115651151,Test (pytest),Install dependencies,success,6.0
+27115651151,Test (pytest),Run tests (pytest),success,1.0
+27115651151,Test (pytest),Upload test results artifact,success,1.0
+27115651151,Test (pytest),Post Restore pip cache,success,0.0
+27115651151,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115651151,Test (pytest),Post Run actions/checkout@v4,success,1.0
+27115651151,Test (pytest),Complete job,success,0.0
+27115651151,Collect pipeline metrics,Set up job,success,1.0
+27115651151,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115651151,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,1.0
+27115651151,Collect pipeline metrics,Upload run metrics artifact,success,0.0
+27115651151,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115651151,Collect pipeline metrics,Complete job,success,1.0
+27115641242,Lint (ruff),Set up job,success,1.0
+27115641242,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115641242,Lint (ruff),Read experiment flags,success,0.0
+27115641242,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115641242,Lint (ruff),Restore pip cache,success,1.0
+27115641242,Lint (ruff),Install dependencies,success,4.0
+27115641242,Lint (ruff),Run ruff (static analysis),success,0.0
+27115641242,Lint (ruff),Upload lint artifact,success,1.0
+27115641242,Lint (ruff),Post Restore pip cache,success,0.0
+27115641242,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115641242,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115641242,Lint (ruff),Complete job,success,0.0
+27115641242,Test (pytest),Set up job,success,1.0
+27115641242,Test (pytest),Run actions/checkout@v4,success,1.0
+27115641242,Test (pytest),Read experiment flags,success,0.0
+27115641242,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115641242,Test (pytest),Restore pip cache,success,1.0
+27115641242,Test (pytest),Install dependencies,success,5.0
+27115641242,Test (pytest),Run tests (pytest),success,1.0
+27115641242,Test (pytest),Upload test results artifact,success,0.0
+27115641242,Test (pytest),Post Restore pip cache,success,0.0
+27115641242,Test (pytest),Post Run actions/setup-python@v5,success,1.0
+27115641242,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115641242,Test (pytest),Complete job,success,0.0
+27115641242,Collect pipeline metrics,Set up job,success,1.0
+27115641242,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115641242,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,3.0
+27115641242,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115641242,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115641242,Collect pipeline metrics,Complete job,success,0.0
+27115631119,Test (pytest),Set up job,success,1.0
+27115631119,Test (pytest),Run actions/checkout@v4,success,0.0
+27115631119,Test (pytest),Read experiment flags,success,0.0
+27115631119,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115631119,Test (pytest),Restore pip cache,skipped,0.0
+27115631119,Test (pytest),Install dependencies,success,7.0
+27115631119,Test (pytest),Run tests (pytest),success,0.0
+27115631119,Test (pytest),Upload test results artifact,success,1.0
+27115631119,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115631119,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115631119,Test (pytest),Complete job,success,0.0
+27115631119,Lint (ruff),Set up job,success,1.0
+27115631119,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115631119,Lint (ruff),Read experiment flags,success,0.0
+27115631119,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115631119,Lint (ruff),Restore pip cache,skipped,0.0
+27115631119,Lint (ruff),Install dependencies,success,5.0
+27115631119,Lint (ruff),Run ruff (static analysis),success,0.0
+27115631119,Lint (ruff),Upload lint artifact,success,1.0
+27115631119,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115631119,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115631119,Lint (ruff),Complete job,success,0.0
+27115631119,Collect pipeline metrics,Set up job,success,0.0
+27115631119,Collect pipeline metrics,Run actions/checkout@v4,success,1.0
+27115631119,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,0.0
+27115631119,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115631119,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115631119,Collect pipeline metrics,Complete job,success,0.0
+27115618689,Test (pytest),Set up job,success,1.0
+27115618689,Test (pytest),Run actions/checkout@v4,success,1.0
+27115618689,Test (pytest),Read experiment flags,success,0.0
+27115618689,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115618689,Test (pytest),Restore pip cache,skipped,0.0
+27115618689,Test (pytest),Install dependencies,success,6.0
+27115618689,Test (pytest),Run tests (pytest),success,0.0
+27115618689,Test (pytest),Upload test results artifact,success,1.0
+27115618689,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115618689,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115618689,Test (pytest),Complete job,success,0.0
+27115618689,Lint (ruff),Set up job,success,1.0
+27115618689,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115618689,Lint (ruff),Read experiment flags,success,0.0
+27115618689,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115618689,Lint (ruff),Restore pip cache,skipped,0.0
+27115618689,Lint (ruff),Install dependencies,success,5.0
+27115618689,Lint (ruff),Run ruff (static analysis),success,0.0
+27115618689,Lint (ruff),Upload lint artifact,success,1.0
+27115618689,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115618689,Lint (ruff),Post Run actions/checkout@v4,success,1.0
+27115618689,Lint (ruff),Complete job,success,0.0
+27115618689,Collect pipeline metrics,Set up job,success,1.0
+27115618689,Collect pipeline metrics,Run actions/checkout@v4,success,1.0
+27115618689,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,0.0
+27115618689,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115618689,Collect pipeline metrics,Post Run actions/checkout@v4,success,1.0
+27115618689,Collect pipeline metrics,Complete job,success,0.0
+27115608784,Lint (ruff),Set up job,success,1.0
+27115608784,Lint (ruff),Run actions/checkout@v4,success,0.0
+27115608784,Lint (ruff),Read experiment flags,success,1.0
+27115608784,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115608784,Lint (ruff),Restore pip cache,success,2.0
+27115608784,Lint (ruff),Install dependencies,success,5.0
+27115608784,Lint (ruff),Run ruff (static analysis),success,0.0
+27115608784,Lint (ruff),Upload lint artifact,success,1.0
+27115608784,Lint (ruff),Post Restore pip cache,success,0.0
+27115608784,Lint (ruff),Post Run actions/setup-python@v5,success,1.0
+27115608784,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115608784,Lint (ruff),Complete job,success,0.0
+27115608784,Test (pytest),Set up job,success,1.0
+27115608784,Test (pytest),Run actions/checkout@v4,success,1.0
+27115608784,Test (pytest),Read experiment flags,success,0.0
+27115608784,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115608784,Test (pytest),Restore pip cache,success,1.0
+27115608784,Test (pytest),Install dependencies,success,5.0
+27115608784,Test (pytest),Run tests (pytest),success,16.0
+27115608784,Test (pytest),Upload test results artifact,success,0.0
+27115608784,Test (pytest),Post Restore pip cache,success,1.0
+27115608784,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115608784,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115608784,Test (pytest),Complete job,success,0.0
+27115608784,Collect pipeline metrics,Set up job,success,1.0
+27115608784,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115608784,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,1.0
+27115608784,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115608784,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115608784,Collect pipeline metrics,Complete job,success,0.0
+27115598414,Test (pytest),Set up job,success,2.0
+27115598414,Test (pytest),Run actions/checkout@v4,success,1.0
+27115598414,Test (pytest),Read experiment flags,success,0.0
+27115598414,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115598414,Test (pytest),Restore pip cache,success,2.0
+27115598414,Test (pytest),Install dependencies,success,7.0
+27115598414,Test (pytest),Run tests (pytest),success,5.0
+27115598414,Test (pytest),Upload test results artifact,success,1.0
+27115598414,Test (pytest),Post Restore pip cache,success,1.0
+27115598414,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115598414,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115598414,Test (pytest),Complete job,success,0.0
+27115598414,Lint (ruff),Set up job,success,1.0
+27115598414,Lint (ruff),Run actions/checkout@v4,success,0.0
+27115598414,Lint (ruff),Read experiment flags,success,0.0
+27115598414,Lint (ruff),Run actions/setup-python@v5,success,1.0
+27115598414,Lint (ruff),Restore pip cache,success,0.0
+27115598414,Lint (ruff),Install dependencies,success,6.0
+27115598414,Lint (ruff),Run ruff (static analysis),success,0.0
+27115598414,Lint (ruff),Upload lint artifact,success,1.0
+27115598414,Lint (ruff),Post Restore pip cache,success,0.0
+27115598414,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115598414,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115598414,Lint (ruff),Complete job,success,1.0
+27115598414,Collect pipeline metrics,Set up job,success,1.0
+27115598414,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115598414,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,1.0
+27115598414,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115598414,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115598414,Collect pipeline metrics,Complete job,success,0.0
+27115588790,Lint (ruff),Set up job,success,1.0
+27115588790,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115588790,Lint (ruff),Read experiment flags,success,0.0
+27115588790,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115588790,Lint (ruff),Restore pip cache,success,2.0
+27115588790,Lint (ruff),Install dependencies,success,5.0
+27115588790,Lint (ruff),Run ruff (static analysis),success,0.0
+27115588790,Lint (ruff),Upload lint artifact,success,1.0
+27115588790,Lint (ruff),Post Restore pip cache,success,0.0
+27115588790,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115588790,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115588790,Lint (ruff),Complete job,success,0.0
+27115588790,Test (pytest),Set up job,success,1.0
+27115588790,Test (pytest),Run actions/checkout@v4,success,1.0
+27115588790,Test (pytest),Read experiment flags,success,0.0
+27115588790,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115588790,Test (pytest),Restore pip cache,success,1.0
+27115588790,Test (pytest),Install dependencies,success,3.0
+27115588790,Test (pytest),Run tests (pytest),success,2.0
+27115588790,Test (pytest),Upload test results artifact,success,0.0
+27115588790,Test (pytest),Post Restore pip cache,success,0.0
+27115588790,Test (pytest),Post Run actions/setup-python@v5,success,1.0
+27115588790,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115588790,Test (pytest),Complete job,success,0.0
+27115588790,Collect pipeline metrics,Set up job,success,1.0
+27115588790,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115588790,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,6.0
+27115588790,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115588790,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115588790,Collect pipeline metrics,Complete job,success,0.0
+27115578063,Lint (ruff),Set up job,success,1.0
+27115578063,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115578063,Lint (ruff),Read experiment flags,success,0.0
+27115578063,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115578063,Lint (ruff),Restore pip cache,success,3.0
+27115578063,Lint (ruff),Install dependencies,success,5.0
+27115578063,Lint (ruff),Run ruff (static analysis),success,0.0
+27115578063,Lint (ruff),Upload lint artifact,success,1.0
+27115578063,Lint (ruff),Post Restore pip cache,success,1.0
+27115578063,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115578063,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115578063,Lint (ruff),Complete job,success,0.0
+27115578063,Test (pytest),Set up job,success,1.0
+27115578063,Test (pytest),Run actions/checkout@v4,success,1.0
+27115578063,Test (pytest),Read experiment flags,success,0.0
+27115578063,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115578063,Test (pytest),Restore pip cache,success,1.0
+27115578063,Test (pytest),Install dependencies,success,3.0
+27115578063,Test (pytest),Run tests (pytest),success,1.0
+27115578063,Test (pytest),Upload test results artifact,success,0.0
+27115578063,Test (pytest),Post Restore pip cache,success,0.0
+27115578063,Test (pytest),Post Run actions/setup-python@v5,success,1.0
+27115578063,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115578063,Test (pytest),Complete job,success,0.0
+27115578063,Collect pipeline metrics,Set up job,success,0.0
+27115578063,Collect pipeline metrics,Run actions/checkout@v4,success,1.0
+27115578063,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,0.0
+27115578063,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115578063,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115578063,Collect pipeline metrics,Complete job,success,0.0
+27115567979,Test (pytest),Set up job,success,1.0
+27115567979,Test (pytest),Run actions/checkout@v4,success,0.0
+27115567979,Test (pytest),Read experiment flags,success,0.0
+27115567979,Test (pytest),Run actions/setup-python@v5,success,1.0
+27115567979,Test (pytest),Restore pip cache,success,0.0
+27115567979,Test (pytest),Install dependencies,success,6.0
+27115567979,Test (pytest),Run tests (pytest),success,0.0
+27115567979,Test (pytest),Upload test results artifact,success,1.0
+27115567979,Test (pytest),Post Restore pip cache,success,0.0
+27115567979,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115567979,Test (pytest),Post Run actions/checkout@v4,success,1.0
+27115567979,Test (pytest),Complete job,success,0.0
+27115567979,Lint (ruff),Set up job,success,1.0
+27115567979,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115567979,Lint (ruff),Read experiment flags,success,0.0
+27115567979,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115567979,Lint (ruff),Restore pip cache,success,0.0
+27115567979,Lint (ruff),Install dependencies,success,6.0
+27115567979,Lint (ruff),Run ruff (static analysis),success,0.0
+27115567979,Lint (ruff),Upload lint artifact,success,1.0
+27115567979,Lint (ruff),Post Restore pip cache,success,0.0
+27115567979,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115567979,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115567979,Lint (ruff),Complete job,success,0.0
+27115567979,Collect pipeline metrics,Set up job,success,0.0
+27115567979,Collect pipeline metrics,Run actions/checkout@v4,success,1.0
+27115567979,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,1.0
+27115567979,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115567979,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115567979,Collect pipeline metrics,Complete job,success,0.0
+27115557184,Lint (ruff),Set up job,success,1.0
+27115557184,Lint (ruff),Run actions/checkout@v4,success,0.0
+27115557184,Lint (ruff),Read experiment flags,success,0.0
+27115557184,Lint (ruff),Run actions/setup-python@v5,success,1.0
+27115557184,Lint (ruff),Restore pip cache,success,0.0
+27115557184,Lint (ruff),Install dependencies,success,4.0
+27115557184,Lint (ruff),Run ruff (static analysis),success,0.0
+27115557184,Lint (ruff),Upload lint artifact,success,1.0
+27115557184,Lint (ruff),Post Restore pip cache,success,0.0
+27115557184,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115557184,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115557184,Lint (ruff),Complete job,success,0.0
+27115557184,Test (pytest),Set up job,success,1.0
+27115557184,Test (pytest),Run actions/checkout@v4,success,1.0
+27115557184,Test (pytest),Read experiment flags,success,0.0
+27115557184,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115557184,Test (pytest),Restore pip cache,success,1.0
+27115557184,Test (pytest),Install dependencies,success,3.0
+27115557184,Test (pytest),Run tests (pytest),failure,0.0
+27115557184,Test (pytest),Upload test results artifact,success,1.0
+27115557184,Test (pytest),Post Restore pip cache,skipped,0.0
+27115557184,Test (pytest),Post Run actions/setup-python@v5,skipped,0.0
+27115557184,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115557184,Test (pytest),Complete job,success,0.0
+27115557184,Collect pipeline metrics,Set up job,success,1.0
+27115557184,Collect pipeline metrics,Run actions/checkout@v4,success,1.0
+27115557184,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,2.0
+27115557184,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115557184,Collect pipeline metrics,Post Run actions/checkout@v4,success,1.0
+27115557184,Collect pipeline metrics,Complete job,success,0.0
+27115546164,Lint (ruff),Set up job,success,1.0
+27115546164,Lint (ruff),Run actions/checkout@v4,success,0.0
+27115546164,Lint (ruff),Read experiment flags,success,0.0
+27115546164,Lint (ruff),Run actions/setup-python@v5,success,1.0
+27115546164,Lint (ruff),Restore pip cache,success,1.0
+27115546164,Lint (ruff),Install dependencies,success,5.0
+27115546164,Lint (ruff),Run ruff (static analysis),success,0.0
+27115546164,Lint (ruff),Upload lint artifact,success,1.0
+27115546164,Lint (ruff),Post Restore pip cache,success,0.0
+27115546164,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115546164,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115546164,Lint (ruff),Complete job,success,0.0
+27115546164,Test (pytest),Set up job,success,1.0
+27115546164,Test (pytest),Run actions/checkout@v4,success,1.0
+27115546164,Test (pytest),Read experiment flags,success,0.0
+27115546164,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115546164,Test (pytest),Restore pip cache,success,1.0
+27115546164,Test (pytest),Install dependencies,success,4.0
+27115546164,Test (pytest),Run tests (pytest),failure,1.0
+27115546164,Test (pytest),Upload test results artifact,success,0.0
+27115546164,Test (pytest),Post Restore pip cache,skipped,0.0
+27115546164,Test (pytest),Post Run actions/setup-python@v5,skipped,0.0
+27115546164,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115546164,Test (pytest),Complete job,success,0.0
+27115546164,Collect pipeline metrics,Set up job,success,1.0
+27115546164,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115546164,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,1.0
+27115546164,Collect pipeline metrics,Upload run metrics artifact,success,0.0
+27115546164,Collect pipeline metrics,Post Run actions/checkout@v4,success,0.0
+27115546164,Collect pipeline metrics,Complete job,success,0.0
+27115535197,Test (pytest),Set up job,success,2.0
+27115535197,Test (pytest),Run actions/checkout@v4,success,1.0
+27115535197,Test (pytest),Read experiment flags,success,0.0
+27115535197,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115535197,Test (pytest),Restore pip cache,success,2.0
+27115535197,Test (pytest),Install dependencies,success,6.0
+27115535197,Test (pytest),Run tests (pytest),success,0.0
+27115535197,Test (pytest),Upload test results artifact,success,1.0
+27115535197,Test (pytest),Post Restore pip cache,success,1.0
+27115535197,Test (pytest),Post Run actions/setup-python@v5,success,0.0
+27115535197,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115535197,Test (pytest),Complete job,success,0.0
+27115535197,Lint (ruff),Set up job,success,1.0
+27115535197,Lint (ruff),Run actions/checkout@v4,success,0.0
+27115535197,Lint (ruff),Read experiment flags,success,0.0
+27115535197,Lint (ruff),Run actions/setup-python@v5,success,1.0
+27115535197,Lint (ruff),Restore pip cache,success,1.0
+27115535197,Lint (ruff),Install dependencies,success,3.0
+27115535197,Lint (ruff),Run ruff (static analysis),success,0.0
+27115535197,Lint (ruff),Upload lint artifact,success,0.0
+27115535197,Lint (ruff),Post Restore pip cache,success,1.0
+27115535197,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115535197,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115535197,Lint (ruff),Complete job,success,0.0
+27115535197,Collect pipeline metrics,Set up job,success,1.0
+27115535197,Collect pipeline metrics,Run actions/checkout@v4,success,1.0
+27115535197,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,3.0
+27115535197,Collect pipeline metrics,Upload run metrics artifact,success,1.0
+27115535197,Collect pipeline metrics,Post Run actions/checkout@v4,success,1.0
+27115535197,Collect pipeline metrics,Complete job,success,0.0
+27115524607,Lint (ruff),Set up job,success,1.0
+27115524607,Lint (ruff),Run actions/checkout@v4,success,1.0
+27115524607,Lint (ruff),Read experiment flags,success,0.0
+27115524607,Lint (ruff),Run actions/setup-python@v5,success,0.0
+27115524607,Lint (ruff),Restore pip cache,success,2.0
+27115524607,Lint (ruff),Install dependencies,success,5.0
+27115524607,Lint (ruff),Run ruff (static analysis),success,0.0
+27115524607,Lint (ruff),Upload lint artifact,success,1.0
+27115524607,Lint (ruff),Post Restore pip cache,success,1.0
+27115524607,Lint (ruff),Post Run actions/setup-python@v5,success,0.0
+27115524607,Lint (ruff),Post Run actions/checkout@v4,success,0.0
+27115524607,Lint (ruff),Complete job,success,0.0
+27115524607,Test (pytest),Set up job,success,1.0
+27115524607,Test (pytest),Run actions/checkout@v4,success,1.0
+27115524607,Test (pytest),Read experiment flags,success,0.0
+27115524607,Test (pytest),Run actions/setup-python@v5,success,0.0
+27115524607,Test (pytest),Restore pip cache,success,1.0
+27115524607,Test (pytest),Install dependencies,success,5.0
+27115524607,Test (pytest),Run tests (pytest),success,1.0
+27115524607,Test (pytest),Upload test results artifact,success,0.0
+27115524607,Test (pytest),Post Restore pip cache,success,0.0
+27115524607,Test (pytest),Post Run actions/setup-python@v5,success,1.0
+27115524607,Test (pytest),Post Run actions/checkout@v4,success,0.0
+27115524607,Test (pytest),Complete job,success,0.0
+27115524607,Collect pipeline metrics,Set up job,success,1.0
+27115524607,Collect pipeline metrics,Run actions/checkout@v4,success,0.0
+27115524607,Collect pipeline metrics,Collect this run's job timings via GitHub API,success,1.0
+27115524607,Collect pipeline metrics,Upload run metrics artifact,success,0.0
+27115524607,Collect pipeline metrics,Post Run actions/checkout@v4,success,1.0
+27115524607,Collect pipeline metrics,Complete job,success,0.0
 27115487508,Lint (ruff),Set up job,success,1.0
 27115487508,Lint (ruff),Run actions/checkout@v4,success,1.0
 27115487508,Lint (ruff),Read experiment flags,success,0.0
