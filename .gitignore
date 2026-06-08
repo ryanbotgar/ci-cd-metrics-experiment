@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+.report.json
+report.json
+junit.xml
+# Artefatos baixados localmente durante a coleta
+data/artifacts/

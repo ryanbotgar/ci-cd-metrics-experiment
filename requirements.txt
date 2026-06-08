@@ -1,0 +1,2 @@
+# Dependências de runtime do projeto-alvo (nenhuma além da stdlib).
+# Mantido vazio de propósito para deixar o pipeline rápido e previsível.
