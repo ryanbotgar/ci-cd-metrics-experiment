@@ -1,6 +1,6 @@
 """Arquivo de testes GERADO automaticamente pelo experimento.
 
-Variação: baseline-1
+Variação: baseline-2
 extra_tests=0 include_slow=False slow_seconds=0.0 include_failing=False
 """
 
